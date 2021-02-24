@@ -2,16 +2,33 @@ var app = new Vue({
     el: '#app',
 
     data: {
-        temp: 0,
+        status: true,
+        
         
     },
-
     methods: {
-        inc:function(d){
-            this.temp++
+
+    }
+
+    
+})
+
+var app = new Vue({
+    el: '#box',
+
+    data: {
+        temp: 0,
+        message: 'Hi I am a message',
+
+    },
+    methods: {
+        inc:function(){
+            this.temp++;
         },
         dec:function(){
             this.temp--;
         },
+        
     }
+
 })
