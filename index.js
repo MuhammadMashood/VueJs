@@ -2,7 +2,16 @@ var app = new Vue({
     el: '#app',
 
     data: {
-        message: 'Hello I am a message',
-        reader: 'Hello this is a secound message',
+        temp: 0,
+        
+    },
+
+    methods: {
+        inc:function(d){
+            this.temp++
+        },
+        dec:function(){
+            this.temp--;
+        },
     }
 })
