@@ -24,6 +24,15 @@
         <button v-on:click="inc">+</button>
         <button v-on:click="dec">-</button>
         {{message}}
+
+        <input type="text" v-model="text">
+        {{text}}
+        <h2 v-if="gate">Gate is open</h2>
+        <h2 v-else-if="!gate">Gate is Closed</h2>
+        <button v-on:click=gate=!gate>Open/Close</button>
+        <p v-for="student in students">{{student}}</p>
+        <p v-for="player in players">{{player.name}}  :  {{player.age}}</p>
+
     </div>
     <script type="text/javascript" src="index.js"></script>
 </body>
